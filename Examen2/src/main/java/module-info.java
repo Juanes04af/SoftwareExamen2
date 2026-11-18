@@ -1,8 +1,15 @@
-module co.edu.poli.Examen2 {
+/**
+ * Modulo de la aplicacion de examenes de sangre con arquitectura hexagonal.
+ *
+ * @author Juan Rosero
+ */
+module co.edu.poli.examen2 {
+
     requires javafx.controls;
     requires javafx.fxml;
 
-    opens co.edu.poli.Examen2.controlador to javafx.fxml;
+    /* JavaFX necesita acceso reflexivo al adaptador de entrada. */
+    opens co.edu.poli.examen2.infraestructura.ui to javafx.fxml;
 
-    exports co.edu.poli.Examen2.vista;
+    exports co.edu.poli.examen2.infraestructura.web;
 }

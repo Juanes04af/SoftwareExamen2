@@ -1,1 +1,19 @@
+# Compilacion
 /target/
+
+# IDEs (cada desarrollador genera los suyos)
+.project
+.classpath
+.settings/
+.idea/
+*.iml
+.vscode/
+
+# Archivos generados al probar la aplicacion
+*.dat
+examenes*.csv
+
+# Sistema operativo / logs
+Thumbs.db
+.DS_Store
+*.log
